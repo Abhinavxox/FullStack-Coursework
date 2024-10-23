@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #121212;
+  color: white;
+  height: 30px;
+}
+
+.header-user {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.header-logo {
+  color: gold;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.signup,
+.login {
+  color: white;
+  text-decoration: none;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  color: white;
+  height: 30px;
+}
+
+.sub-header a {
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.login-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.movies {
+  display: flex;
+  gap: 20px;
+}
+
+.movie-card {
+  text-align: center;
+}
+
+.movie-image {
+  width: 200px;
+  height: 300px;
+}
+
+.see-more {
+  margin-top: 20px;
+}
+
+.see-more-button {
+  background-color: #121212;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* genre */
+.genre-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.genre-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.genre-list a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.celeb-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.celeb-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.celeb-card img {
+  width: 300px;
+  height: 300px;
+}
+
+.news-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-wrapper {
+  margin: 10%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact-wrapper {
+  margin: 10%;
+  font-size: 20px;
+  text-align: center;
+}

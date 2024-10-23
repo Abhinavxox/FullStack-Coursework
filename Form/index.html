@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .title {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .form-label {
+      font-size: 20px;
+      margin: 40px;
+      padding-right: 20px;
+    }
+
+    .hobbies {
+      display: flex;
+      align-items: start;
+    }
+
+    .form-input {
+      width: 30vh;
+      margin-bottom: 2vh;
+    }
+
+    .address {
+      min-height: 10vh;
+    }
+
+    .center-check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .button {
+      margin-left: 4vh;
+      font-size: 20px;
+    }
+
+    .table {
+      margin-left: 5vh;
+      border: 1;
+      border-color: black;
+      margin-top: 30px;
+    }
+
+    .item {
+      font-size: 30px;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div>
+      <h1 class="title">INPUT FORM</h1>
+      <form>
+        <label class="form-label"> Enter Name: </label>
+        <input type="text" class="form-input" />
+        <br />
+        <label class="form-label"> Enter Age: </label>
+        <input type="number" class="form-input" />
+        <br />
+        <label class="form-label"> Enter DOB: </label>
+        <input type="date" class="form-input" />
+        <br />
+        <label class="form-label"> Enter Username: </label>
+        <input type="file" class="form-input" />
+        <br />
+        <label class="form-label"> Enter New Password: </label>
+        <input type="password" class="form-input" />
+        <br />
+        <label class="form-label"> Confirm Password: </label>
+        <input type="password" class="form-input" />
+        <br />
+        <label class="form-label"> Enter Email: </label>
+        <input type="text" class="form-input" />
+        <br />
+        <div style="display: flex">
+          <p class="form-label">Enter Address:</p>
+          <textarea class="form-input address"></textarea>
+        </div>
+        <br />
+        <label class="form-label"> Enter Mobile: </label>
+        <input type="number" class="form-input" />
+        <br />
+        <div style="display: flex">
+          <p class="form-label">Select Gender:</p>
+          <div class="center-check">
+            <input type="radio" name="gender1" />
+            <label>M</label>
+            <input type="radio" name="gender" />
+            <label>F</label>
+            <input type="radio" name="gender" />
+            <label>Others</label>
+          </div>
+        </div>
+        <br />
+        <label class="form-label"> Select Qualification: </label>
+        <select class="form-input">
+          <option>...</option>
+          <option selected="selected">PG</option>
+          <option>UG</option>
+          <option>PHD</option>
+        </select>
+        <br />
+        <div class="hobbies">
+          <label class="form-label"> Select Hobbies: </label>
+          <div>
+            <input type="checkbox" />
+            <label>Singing</label>
+            <br />
+            <input type="checkbox" />
+            <label>Dancing</label>
+            <br />
+            <input type="checkbox" />
+            <label>Coding</label>
+            <br />
+          </div>
+        </div>
+        <button type="submit" class="button">SUBMIT</button>
+        <button type="reset" class="button">RESET</button>
+      </form>
+
+      <div>
+        <table class="table" border="2">
+          <tr>
+            <th class="item">A</th>
+            <th class="item">B</th>
+            <th class="item">C</th>
+          </tr>
+          <tr>
+            <td class="item">x</td>
+            <td colspan="2" class="item">y</td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="item">p</td>
+            <td class="item">p<sup>2</sup></td>
+            <td class="item">q<sub>2</sub></td>
+          </tr>
+          <tr>
+            <td class="item">p<sup>3</sup></td>
+            <td class="item">q<sub>3</sub></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

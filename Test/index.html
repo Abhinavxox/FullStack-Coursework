@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation Example</title>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+
+    <form id="registrationForm">
+      <!-- Text Input -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" /><br /><br />
+
+      <!-- Number Input -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" /><br /><br />
+
+      <!-- Date Input -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" /><br /><br />
+
+      <!-- Select Input -->
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="">Select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option></select
+      ><br /><br />
+
+      <!-- Radio Input -->
+      <label>Membership Type:</label><br />
+      <input type="radio" id="basic" name="membership" value="basic" />
+      <label for="basic">Basic</label><br />
+      <input type="radio" id="premium" name="membership" value="premium" />
+      <label for="premium">Premium</label><br /><br />
+
+      <!-- Checkbox Input -->
+      <label>
+        <input type="checkbox" id="terms" name="terms" /> I agree to the terms
+        and conditions </label
+      ><br /><br />
+
+      <button type="submit">Register</button>
+      <p id="errorMessage" style="color: red"></p>
+    </form>
+
+    <script>
+      // Form validation function
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (event) {
+          let errorMessage = "";
+
+          // Text input validation
+          const username = document.getElementById("username").innerHTML;
+          if (username === "") {
+            errorMessage += "Username is required.<br>";
+          } else if (username.length < 3) {
+            errorMessage += "Username must be at least 3 characters long.<br>";
+          }
+
+          // Number input validation
+          const age = document.getElementById("age").value;
+          if (age === "") {
+            errorMessage += "Age is required.<br>";
+          } else if (age < 18 || age > 100) {
+            errorMessage += "Age must be between 18 and 100.<br>";
+          }
+
+          // Date input validation
+          const dob = document.getElementById("dob").value;
+          console.log(dob);
+          if (dob === "") {
+            errorMessage += "Date of birth is required.<br>";
+          }
+
+          // Select input validation
+          const gender = document.getElementById("gender").value;
+          if (gender === "") {
+            errorMessage += "Please select your gender.<br>";
+          }
+
+          // Radio input validation (membership)
+          const membership = document.querySelector(
+            'input[name="membership"]:checked'
+          );
+          if (!membership) {
+            errorMessage += "Please select a membership type.<br>";
+          }
+
+          // Checkbox input validation (terms and conditions)
+          const terms = document.getElementById("terms").checked;
+          if (!terms) {
+            errorMessage += "You must agree to the terms and conditions.<br>";
+          }
+
+          // Display error messages if any
+          const errorElement = document.getElementById("errorMessage");
+          if (errorMessage !== "") {
+            event.preventDefault(); // Prevent form submission
+            errorElement.innerHTML = errorMessage;
+          } else {
+            errorElement.innerHTML = ""; // Clear previous error messages
+            alert("Form submitted successfully!");
+          }
+        });
+    </script>
+  </body>
+</html>

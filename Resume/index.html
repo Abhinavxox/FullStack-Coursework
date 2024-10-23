@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link href="./style.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .profile-picture {
+        display: block;
+        margin: 0 auto 20px auto;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+      }
+
+      .name {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .contact-info {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .section-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+      }
+
+      .section-content {
+        margin-bottom: 20px;
+      }
+
+      .skills-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .skills-list li {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <img src="ProfilePic.png" class="profile-picture" />
+      <div class="name">Abhinav Pandey</div>
+      <div class="contact-info">
+        <p>Email: meronaamabhinav@gmail.com</p>
+        <p>Phone: +91 9153563744</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Experience</div>
+        <div class="section-content">
+          <p><strong>Job Title</strong> - Google</p>
+          <p>Jan 2022 - Present</p>
+          <p>SDE-2</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            velit officiis inventore blanditiis, vero sed accusamus iste eveniet
+            similique. Nihil quisquam doloribus debitis cumque vero illum
+            officiis nisi voluptate? Laudantium!
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Education</div>
+        <table
+          style="
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+          "
+        >
+          <tr>
+            <th style="border: 1px solid black">Degree</th>
+            <th style="border: 1px solid black">College</th>
+            <th style="border: 1px solid black">CGPA</th>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black">10+2 (2020 batch)</td>
+            <td style="border: 1px solid black">
+              Uniglobe Higher Secondary School, Kathmandu
+            </td>
+            <td style="border: 1px solid black">3.64/4.0</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black">BTech. CSE-AI (2025 batch)</td>
+            <td style="border: 1px solid black">
+              Amrita Vishwa Vidyapeetham, Amritapuri Campus
+            </td>
+            <td style="border: 1px solid black">9.08/10</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Projects</div>
+        <div class="section-content">
+          <p><strong>Google AI</strong> - Project Description</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            velit officiis inventore blanditiis, vero sed accusamus iste eveniet
+            similique. Nihil quisquam doloribus debitis cumque vero illum
+            officiis nisi voluptate? Laudantium!
+          </p>
+          <p><strong>Amrita AI</strong> - Project Description</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            velit officiis inventore blanditiis, vero sed accusamus iste eveniet
+            similique. Nihil quisquam doloribus debitis cumque vero illum
+            officiis nisi voluptate? Laudantium!
+          </p>
+        </div>
+
+
+      <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="section-content">
+          <ul class="skills-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Problem Solving</li>
+            <li>Leadership</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
