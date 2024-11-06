@@ -8,4 +8,7 @@ class Student(models.Model):
     address = models.TextField()
     roll_number = models.CharField(max_length=10)
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
     
