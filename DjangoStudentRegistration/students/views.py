@@ -32,6 +32,7 @@ def register_student(request):
             course=course
         )
         student.save()
+        return render(request, 'successpage.html',)
     
     courses = Course.objects.all()
     return render(request, 'register.html', {'courses': courses})
